@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt Rocket League webu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League – Kontakt</title>
+    <link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/484/347/png-clipart-blue-and-white-logo-rocket-league-video-game-psyonix-logo-decal-rocket-league-miscellaneous-game-thumbnail.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="hero">
+    <h1>Kontakt</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+<li><a href="pravidla.html">Pravidla</a></li>
+<li><a href="auta.html">Auta</a></li>
+<li><a href="popularita.html">Popularita</a></li>
+<li><a href="tymy.html">Týmy</a></li>
+<li><a href="mmr.html">Ranky a MMR</a></li>
+<li><a href="kontakt.html" class="active">Kontakt</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Napiš nám</h2>
+        <p>
+            Máš dotaz, návrh na vylepšení nebo se chceš podělit o svůj nejlepší gól?  
+            Vyplň formulář a ozveme se ti zpět.
+        </p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno" required>
+            </p>
+
+            <p>
+                <label for="email">E‑mail:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="rank">Tvůj rank:</label>
+                <select id="rank" name="rank">
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                    <option>Diamond</option>
+                    <option>Champion</option>
+                    <option>Grand Champion</option>
+                    <option>Super Sonic Legend</option>
+                </select>
+            </p>
+
+            <p>
+                <span>Preferovaný mód:</span><br>
+                <label><input type="radio" name="mod" value="1v1"> 1v1</label>
+                <label><input type="radio" name="mod" value="2v2"> 2v2</label>
+                <label><input type="radio" name="mod" value="3v3"> 3v3</label>
+                <label><input type="radio" name="mod" value="4v4"> 4v4</label>
+            </p>
+			
+			<p>
+            <label for="replay">Nahraj svůj replay (.replay):</label>
+            <input type="file" id="replay" name="replay" accept=".replay">
+            </p>
+
+            <p>
+                <label><input type="checkbox" id="novinky" name="novinky"> Chci dostávat novinky</label>
+            </p>
+
+            <p>
+                <button type="submit">Odeslat</button>
+            </p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Rocket League Web</p>
+</footer>
+</body>
+</html>

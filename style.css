@@ -1,0 +1,188 @@
+/* Globální styl */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background: #0b0f17;
+    color: #e6e6e6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Hero sekce */
+.hero {
+    text-align: left;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #0b0f17, #0f1f3d);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #4db8ff;
+    margin-bottom: 10px;
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    color: #b3dfff;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+/* Navigace */
+nav ul {
+    display: flex;
+    gap: 20px; /* mezery mezi odkazy */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #4db8ff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #4db8ff;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #ff8800;
+    text-decoration: underline;
+}
+
+/* Obsah */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #4db8ff;
+    margin-top: 40px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Obrázky */
+figure {
+    margin: 30px 0;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+    .Squishy {
+	flex-direction: column;
+	text-align: center;
+	width: 350px;
+    }
+
+    .Jynxzi {
+    flex-direction: column;
+	text-align: center;
+	}
+.RL-logo {
+  display: flex;
+  align-items: center;
+}
+
+.RL-Logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Tabulka */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #111827;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #1f2937;
+}
+
+th, td {
+    padding:20px;
+    border-bottom: 1px solid #2d3748;
+}
+
+tbody tr:hover {
+    background: #1a2533;
+}
+
+/* Formulář */
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #4db8ff;
+    background: #0f1624;
+    color: #e6e6e6;
+}
+
+button {
+    background: #4db8ff;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1a8cd8;
+}
+
+/* Responzivita */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
